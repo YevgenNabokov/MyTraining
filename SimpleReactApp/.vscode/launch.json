@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            //"name": "Launch",
+            "name": "Launch lite-server", 
+            "type": "node", 
+            "request": "launch", 
+            //"program": "${workspaceRoot}/app.js",
+            "program": "${workspaceRoot}/node_modules/lite-server/bin/lite-server",
+            //"program": "${workspaceRoot}/node_modules/concurrently/src/main.js \"${workspaceRoot}/node_modules/typescript/bin/tsc -w\" ${workspaceRoot}/node_modules/lite-server/bin/lite-server",       
+            "stopOnEntry": false, 
+            "args": [ ], 
+            "cwd": "${workspaceRoot}", 
+            "preLaunchTask": null,
+            "runtimeExecutable": null, 
+            "runtimeArgs": [ 
+                "--nolazy" 
+            ], 
+            "env": { 
+                "NODE_ENV": "development" 
+            },
+            "sourceMaps": true,
+        }
+    ]
+}
