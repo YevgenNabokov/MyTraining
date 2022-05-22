@@ -23,22 +23,21 @@ const MainView = observer(() => {
                 </Toolbar>
             </AppBar>
 
-            <Table>
+            <Table style={{ marginTop: 60 }}>
                 <TableHead>
                     <TableRow>
-                        <TableCell></TableCell>
-                        <TableCell align="right">Member</TableCell>
-                        <TableCell align="right">Success Ratio</TableCell>
+                        <TableCell align="center" colSpan={2}>Member</TableCell>
+                        <TableCell align="left">Success Ratio</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
                     {leaderBoardStore.leaderBoardMembers.map((row) => (
-                        <TableRow style={{height: 10}} key={row.name}>
+                        <TableRow key={row.name}>
                             <TableCell component="th" scope="row">
                                 <Avatar style={{ width: '4rem', height: '4rem' }} {...row.avatarConfig} />
                             </TableCell>
-                            <TableCell align="right">{row.name}</TableCell>
-                            <TableCell align="right">{row.successRatio}</TableCell>
+                            <TableCell align="left">{row.name}</TableCell>
+                            <TableCell align="left">{row.successRatio}</TableCell>
                         </TableRow>
                     ))}
                 </TableBody>
