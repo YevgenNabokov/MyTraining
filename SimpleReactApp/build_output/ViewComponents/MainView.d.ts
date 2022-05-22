@@ -1,5 +1,2 @@
-import * as React from 'react';
-declare class MainView extends React.Component {
-    render(): JSX.Element;
-}
+declare const MainView: () => JSX.Element;
 export default MainView;

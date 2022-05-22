@@ -7,7 +7,7 @@ module.exports = {
     // Enable sourcemaps for debugging webpack's output.
     devtool: "source-map",
 
-    entry: path.resolve(__dirname, "src/Index.ts"),
+    entry: path.resolve(__dirname, "src/Index.tsx"),
 
     plugins: [
         new CleanWebpackPlugin()
